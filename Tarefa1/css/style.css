@@ -1,0 +1,13 @@
+.logo {
+  width: 120px;/* Defina a largura que desejar, por exemplo, 150 pixels */
+  height: auto;/* 'auto' mantém a proporção correta da imagem */
+  border-radius: 8px; /* Adiciona cantos arredondados para um visual mais suave */
+}
+.imagem-ilustrativa {
+  width: 100%;      /* Faz a imagem ocupar 100% da largura do seu contentor pai */
+  max-width: 400px; /* Define uma largura máxima, por exemplo, 600px */
+  height: auto;     /* Mantém a proporção da imagem ao ajustar a largura */
+  display: block;   /* Remove pequenos espaços que podem aparecer debaixo da imagem */
+  margin: 20px auto;/* Adiciona uma margem (20px em cima/baixo, 'auto' nos lados para centrar) */
+  border-radius: 8px; /* Adiciona cantos arredondados para um visual mais suave */
+}
