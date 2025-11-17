@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Patapet feliz Cadastro</title>
+   <link rel="icon" href="assets/icons/pet.svg" type="image/svg+xml">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-mode high-contrast">
+    <header class="cabecalho">     
+        <img src="assets/icons/pet.svg" alt="Logo da Patapet Feliz" class="logo">
+        <h1>Patapet Feliz</h1>
+        <nav class="menu-principal" id="menu-principal" aria-label="Menu principal">
+          <ul>
+            <li><a href="index.html" tabindex="0">Sobre</a></li>
+            <li><a href="contato.html" tabindex="0">Contato</a></li>
+            <li><a href="cadastro.html" tabindex="0">Cadastro</a></li>
+
+            <li class="dropdown">
+                <a href="projetos.html" tabindex="0">Projetos &#x25BE;</a>
+                <ul class="dropdown-content">
+                    <li><a href="projetos.html#voluntariado" tabindex="0">Seja Voluntário</a></li>
+                    <li><a href="projetos.html#como-doar" tabindex="0">Faça uma Doação</a></li>
+                </ul>
+            </li>
+          </ul>
+        </nav>
+        <section class="toggle-buttons">
+            <button id="toggle-dark" class="btn" aria-pressed="false">Modo Escuro</button>
+            <button id="toggle-contrast" class="btn" aria-pressed="false">Alto Contraste</button>
+        </section>
+        <button id="menu-toggle" class="btn menu-hamburguer" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">&#x2261;</button>
+    </header>    
+    <main class= "formulario-moderno">
+       <h2 id="titulo-cadastro">Cadastro</h2>
+       <form aria-labelledby="titulo-cadastro"> 
+          <fieldset>
+            <legend>Informações Pessoais</legend>
+
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required aria-required="true">
+        
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" 
+                   placeholder="(00) 00000-0000" title="Formato: (00) 00000-0000" aria-describedby="telefone-dica">
+            <small id="telefone-dica">Formato: (00) 00000-0000</small>
+           
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" 
+                   placeholder="000.000.000-00" title="Formato: 000.000.000-00" aria-describedby="cpf-dica">
+            <small id="cpf-dica">Formato: 000.000.000-00</small>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}" 
+                   placeholder="00000-000" title="Formato: 00000-000" aria-describedby="cep-dica">
+             <small id="cep-dica">Formato: 00000-000</small>
+             
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required> 
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required> 
+
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required> 
+
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento" required>
+        
+            <label for="idade">Idade:</label>         
+            <input type="number" id="idade" name="idade" 
+               min="18" max="120">   
+         
+            <label for="habilidades">Habilidades:</label>
+            <input type="text" id="habilidades" name="habilidades" required>      
+         
+            <label for="disponibilidade">Disponibilidade:</label>
+            <input type="text" id="disponibilidade" name="disponibilidade" required>   
+
+          </fieldset>
+          <button type="submit" class="btn" aria-label="Enviar cadastro">Enviar</button>
+       </form>
+       <br> <a href="index.html">Voltar</a>
+    </main>
+    <aside id="toast-container">
+        <p id="toast-cadastro" class="toast toast-success" role="status">
+            <span class="toast-icon">&#x2713;</span>
+            <span class="toast-message">Cadastro realizado com sucesso!</span>
+            <button class="toast-close-btn" aria-label="Fechar">&times;</button>
+        </p>
+    </aside>
+    <footer class="rodape">
+        <p>&copy; 2025 Patapet Feliz</p>
+    </footer>    
+    <script src="js/global.js"></script>
+    <script src="js/cadastro.js"></script>
+   
+</body>
+</html>

@@ -16,48 +16,60 @@
             <li><a href="index.html">Sobre</a></li>
             <li><a href="contato.html">Contato</a></li>
             <li><a href="cadastro.html">Cadastro</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
+            <li class="dropdown">
+              <a href="projetos.html">Projetos&#9662;</a>
+              <ul class="dropdown-content">
+                <li><a href="projetos.html#voluntariado">Seja Voluntário</a></li>
+                <li><a href="projetos.html#como-doar">Faça uma Doação</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
+        <button id="menu-toggle" class="btn menu-hamburguer">&#x2261;</button>
     </header>
-    <main> 
-        <section id="missao">
+    <aside class="alert alert-info">
+            <strong>Ajude um animal hoje e faça a diferença!</strong>
+            <a href="projetos.html#como-doar" class="alert-link"> Clique aqui para doar via PIX </a>
+    </aside>
+    <main class="grid-container"> 
+        <section id="missao" class="card  col-12">
             <h2>Missão</h2>
             <p>Somos a organização Patapet Feliz, uma osc sem fins lucrativos e temos como missão lutar pelos direitos dos animais, tratar e acolher os nossos amiguinhos com muito amor e encontrar novos lares. Criamos ações de conscientização de proteção e cuidados aos animais.</p>
             <img src="img/imagemdepet1.jpg" alt="Cachorro Feliz" class="imagem-ilustrativa">
         </section>
-        <section id="visao">
+        <section id="visao" class="card col-12">
             <h2>Visão</h2>
             <p>Conseguir ajudar o maior número de animais em abandono.</p>
-            <img src="img/imagemdepet2.jpg" alt="Cachorro Feliz" class="imagem-ilustrativa">
+            <img src="img/imagemdepet2.jpg" alt="Cachorro Feliz" class="imagem-ilustrativa" >
         </section>      
-        <section id="valores">
+        <section id="valores" class="card col-12">
             <h2>Valores</h2>
-            <p>Atuamos na proteção e resgate dos animais oferecendo tratamentos e cuidados. Encontramos novos lares e conscientizamos a sociedade sobre os cuidados aos animais.</p> 
+            <p>Atuamos na proteção e resgate dos animai oferecendo tratamentos e cuidados. Encontramos novos lares e conscientizamos a sociedade sobre os cuidados aos animais.</p> 
             <img src="img/imagemdepet3.jpg" alt="Gato Feliz" class="imagem-ilustrativa">
         </section>
-        <section id="contato">
-            <h2>Contato</h2>
+    </main>
+    <section id="contato" class="contato">
+    <h2>Contato</h2>
             <address>
                 <p>Email: <a href="mailto:exemplo@exemplo.com">exemplo@exemplo.com</a></p>
                 <p>Telefone: (00) 00000-0000</p>
             </address>
-        </section>
-        <section>
-            <h2>Nossa Localização</h2>
-            <iframe 
-            width="600" 
-            height="450" 
-            style="border:0;" 
-            loading="lazy" 
-            allowfullscreen
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-46.646,-23.560,-46.626,-23.540&layer=mapnik">
-            </iframe>
-        </section>
-    </main>  
-    <footer>
+    </section>
+    <section class="localizacao" >
+        <h2>Localização</h2>
+        <iframe 
+        width="400" 
+        height="250" 
+        style="border:0;" 
+        loading="lazy" 
+        allowfullscreen
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-46.646,-23.560,-46.626,-23.540&layer=mapnik">
+        </iframe>
+    </section>
+    <footer class="rodape">
         <p>&copy; 2025 Patapet Feliz</p>
     </footer>
+    <script src="js/global.js"></script>
 
 </body>
 </html>

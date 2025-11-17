@@ -16,23 +16,31 @@
             <li><a href="index.html">Sobre</a></li>
             <li><a href="contato.html">Contato</a></li>
             <li><a href="cadastro.html">Cadastro</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
+            <li class="dropdown">
+                <a href="projetos.html">Projetos &#x25BE;</a>
+                <ul class="dropdown-content">
+                    <li><a href="projetos.html#voluntariado">Seja Voluntário</a></li>
+                    <li><a href="projetos.html#como-doar">Faça uma Doação</a></li>
+                </ul>
+            </li>
           </ul>
         </nav>
+        <button id="menu-toggle" class="btn menu-hamburguer">&#x2261;</button>
     </header>
     <main>
-      <section id="contato">
+      <section id="contato" class="contato">
             <h2>Contato</h2>
             <address>
                 <p>Email: <a href="mailto:exemplo@exemplo.com">exemplo@exemplo.com</a></p>
                 <p>Telefone: (00) 00000-0000</p>
             </address>
-            <br><a href="index.html">Voltar</a>
       </section>
+    <br><a href="index.html">Voltar</a>
     </main>
-    <footer>
+    <footer class="rodape">
         <p>&copy; 2025 Patapet Feliz</p>
     </footer>
+    <script src="js/global.js"></script>
 
 </body>
 </html>

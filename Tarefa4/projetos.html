@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Patapet feliz Projetos</title>
+   <link rel="icon" href="assets/icons/pet.svg" type="image/svg+xml">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-mode high-contrast">
+    <header class="cabecalho" role="banner">     
+        <img src="assets/icons/pet.svg" alt="Logo da Patapet Feliz" class="logo">
+        <h1>Patapet Feliz</h1>
+        <nav class="menu-principal" role="navigation" aria-label="Menu principal">
+          <ul>
+            <li><a href="index.html" tabindex="0">Sobre</a></li>
+            <li><a href="contato.html" tabindex="0">Contato</a></li>
+            <li><a href="cadastro.html" tabindex="0">Cadastro</a></li>
+
+            <li class="dropdown">
+                <a href="projetos.html" tabindex="0">Projetos &#x25BE;</a>
+                <ul class="dropdown-content">
+                    <li><a href="projetos.html#voluntariado" tabindex="0">Seja Voluntário</a></li>
+                    <li><a href="projetos.html#como-doar" tabindex="0">Faça uma Doação</a></li>
+                </ul>
+            </li>
+          </ul>
+        </nav>
+        <section class="toggle-buttons">
+            <button id="toggle-dark" class="btn" aria-pressed="false">Modo Escuro</button>
+            <button id="toggle-contrast" class="btn" aria-pressed="false">Alto Contraste</button>
+        </section>
+        <button id="menu-toggle" class="btn menu-hamburguer" aria-label="Abrir menu">&#x2261;</button>
+    </header>
+    <main class="grid-container"> 
+        <section id="voluntariado" class="card card-destacado col-12" tabindex="0">
+            <h2 id= "voluntariado-title">Voluntariado</h2>
+            <img src="img/voluntariado.png" alt="Voluntariado" class="imagem-ilustrativa"> 
+            <p>Na Patapet Feliz cada gesto transforma vidas. Ser voluntário é ajudar com o coração, doar carinho, tempo e cuidar. Toda a ajuda é importante, desde divulgar até doações.</p>
+            <p> <strong>Quer fazer a diferença ? Doe amor e salve vidas!</strong> <br> <a href="cadastro.html">Cadastre-se para ser voluntário</a></p>
+        </section>
+        <section id="como-doar" class="card card-destacado col-12" tabindex="0">
+            <h2 id="Como doar-title">Como doar</h2>
+            <p>Não pode estar presente ? Pode ajudar doando!</p>
+            <p>Cada contribuição mantém nossos resgates, vacinas, rações e o sonho de um lar.</p>
+            <h3>Faça a sua doação via PIX:</h3>
+            <a  href="pix-link-aqui" class="badge badge-urgente">Ajude Agora</a>
+            <section>
+                <p>Chave PIX (E-mail): <strong id="chave-pix">exemplo@exemplo.com</strong></p>            
+                <button id="copiar-pix-btn" class="btn-primary" aria-label="Copiar chave PIX para a área de transferência">Copiar Chave</button>
+            </section>
+            <dialog id="confirmacao-modal" class="modal-discreto" role="alertdialog" aria-modal="true">
+                <p>&#x2713; Chave PIX copiada!</p>
+            </dialog>
+         </section>
+    </main>
+    <footer class="rodape">
+        <p>&copy; 2025 Patapet Feliz</p>
+    </footer>
+    <script src="js/global.js"></script>
+    <script src="js/projetos.js"></script>
+
+</body>
+</html>
