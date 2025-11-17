@@ -15,6 +15,7 @@ O projeto segue boas práticas de versionamento e GitFlow, com histórico de com
 3. Abra o arquivo index.html no navegador
 
 ## Estrutura do Projeto
+```
 / (raiz do repositório)
 │ README.md → Documentação principal
 │
@@ -94,7 +95,7 @@ O projeto segue boas práticas de versionamento e GitFlow, com histórico de com
         ├─ cadastro.js
         ├─ global.js
         └─ projeto.js
-
+```
 ## Deploy
 Como este projeto é destinado a tarefas da faculdade, você pode abrir diretamente os arquivos HTML no navegador ou hospedar em serviços gratuitos.
 
