@@ -10,7 +10,7 @@ O projeto segue boas práticas de versionamento e GitFlow, com histórico de com
 - **JavaScript**
 
 ## Instalação e Execução
-1. Clone o repositório - ```bash git clone https://github.com/lindasousa/experienciaspraticas.git
+1. Clone o repositório - ```bash git clone https://github.com/lindasousa/experienciaspraticas.html.git
 2. Abra a pasta da tarefa desejada
 3. Abra o arquivo index.html no navegador
 
