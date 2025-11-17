@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patapet Feliz</title>
+    <link rel="icon" href="assets/icons/pet.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cabecalho">     
+        <img src="assets/icons/pet.svg" alt="Logo da Patapet Feliz" class="logo">
+        <h1>Patapet Feliz</h1>
+
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="sobre">Sobre</a></li>
+                <li><a href="contato">Contato</a></li>
+                <li><a href="cadastro">Cadastro</a></li>
+
+                <li class="dropdown">
+                    <a href="projetos">Projetos &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="projetos#voluntariado">Seja Voluntário</a></li>
+                        <li><a href="projetos#como-doar">Faça uma Doação</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <button id="menu-toggle" class="btn menu-hamburguer">&#x2261;</button>
+    </header>
+
+    <aside class="alert alert-info">
+        <strong>Ajude um animal hoje e faça a diferença!</strong>
+        <a href="projetos#como-doar" class="alert-link">Clique aqui para doar via PIX</a>
+    </aside>
+
+    <main class="grid-container"></main>
+
+    <footer class="rodape">
+        <p>&copy; 2025 Patapet Feliz</p>
+    </footer>
+
+    <script src="js/spa.js"></script>
+    <script src="js/global.js"></script>
+</body>
+</html>

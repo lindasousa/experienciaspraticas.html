@@ -16,11 +16,18 @@
             <li><a href="index.html">Sobre</a></li>
             <li><a href="contato.html">Contato</a></li>
             <li><a href="cadastro.html">Cadastro</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
+            <li class="dropdown">
+                <a href="projetos.html">Projetos &#x25BE;</a>
+                <ul class="dropdown-content">
+                    <li><a href="projetos.html#voluntariado">Seja Voluntário</a></li>
+                    <li><a href="projetos.html#como-doar">Faça uma Doação</a></li>
+                </ul>
+              </li>
           </ul>
         </nav>
+        <button id="menu-toggle" class="btn menu-hamburguer">&#x2261;</button>
     </header>    
-    <main>
+    <main class= "formulario-moderno">
        <h2>Cadastro</h2>
        <form>
           <fieldset>
@@ -67,13 +74,22 @@
             <input type="text" id="disponibilidade" name="disponibilidade" required>   
 
           </fieldset>
-          <button type="submit">Enviar</button>
+          <button type="submit" class="btn">Enviar</button>
        </form>
        <br> <a href="index.html">Voltar</a>
     </main>
-    <footer>
+    <aside id="toast-container">
+        <p id="toast-cadastro" class="toast toast-success" role="status">
+            <span class="toast-icon">&#x2713;</span>
+            <span class="toast-message">Cadastro realizado com sucesso!</span>
+            <button class="toast-close-btn" aria-label="Fechar">&times;</button>
+        </p>
+    </aside>
+    <footer class="rodape">
         <p>&copy; 2025 Patapet Feliz</p>
     </footer>    
-
+    <script src="js/global.js"></script>
+    <script src="js/cadastro.js"></script>
+    
 </body>
 </html>
